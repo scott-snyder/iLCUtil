@@ -34,7 +34,7 @@ MACRO( GENERATE_PACKAGE_CONFIGURATION_FILES )
         ENDIF()
 
         IF( ${arg} MATCHES "LibDeps.cmake" )
-            EXPORT_LIBRARY_DEPENDENCIES( "${arg}" )
+            #EXPORT_LIBRARY_DEPENDENCIES( "${arg}" )
             INSTALL( FILES "${PROJECT_BINARY_DIR}/${arg}" DESTINATION lib/cmake )
         ENDIF()
 
