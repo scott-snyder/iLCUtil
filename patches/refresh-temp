@@ -1,0 +1,36 @@
+Bottom: 1001de92de18a3b10e24082c1884b3a97d0f24ff
+Top:    4739ae552349425c737f8d4c4f09dc58494f77eb
+Author: scott snyder <sss@karma>
+Date:   2020-02-03 10:28:45 -0500
+
+Refresh of cmake
+
+---
+
+diff --git a/cmakemodules/MacroGeneratePackageConfigFiles.cmake b/cmakemodules/MacroGeneratePackageConfigFiles.cmake
+index 0699d46..eac00bc 100644
+--- a/cmakemodules/MacroGeneratePackageConfigFiles.cmake
++++ b/cmakemodules/MacroGeneratePackageConfigFiles.cmake
+@@ -34,7 +34,7 @@ MACRO( GENERATE_PACKAGE_CONFIGURATION_FILES )
+         ENDIF()
+ 
+         IF( ${arg} MATCHES "LibDeps.cmake" )
+-            EXPORT_LIBRARY_DEPENDENCIES( "${arg}" )
++            #EXPORT_LIBRARY_DEPENDENCIES( "${arg}" )
+             INSTALL( FILES "${PROJECT_BINARY_DIR}/${arg}" DESTINATION lib/cmake )
+         ENDIF()
+ 
+diff --git a/cmakemodules/ilcsoft_default_cxx_flags.cmake b/cmakemodules/ilcsoft_default_cxx_flags.cmake
+index 9660784..726362d 100644
+--- a/cmakemodules/ilcsoft_default_cxx_flags.cmake
++++ b/cmakemodules/ilcsoft_default_cxx_flags.cmake
+@@ -4,7 +4,8 @@
+ 
+ INCLUDE(CheckCXXCompilerFlag)
+ 
+-SET(COMPILER_FLAGS -Wall -Wextra -Wshadow -Weffc++ -pedantic -Wno-long-long -Wuninitialized )
++#SET(COMPILER_FLAGS -Wall -Wextra -Wshadow -Weffc++ -pedantic -Wno-long-long -Wuninitialized )
++SET(COMPILER_FLAGS -Wall -Wextra -Wshadow -pedantic -Wno-long-long -Wuninitialized )
+ 
+ IF( "${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" )
+  LIST( APPEND COMPILER_FLAGS -Wl,-no-undefined )
