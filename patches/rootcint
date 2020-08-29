@@ -1,0 +1,6 @@
+Bottom: 6073aa3e60fdf1d9a9328c824a398ff19796c25e
+Top:    6073aa3e60fdf1d9a9328c824a398ff19796c25e
+Author: scott snyder <sss@karma>
+Date:   2020-08-29 10:31:14 -0400
+
+Remove deprecated rootcint flag -c.

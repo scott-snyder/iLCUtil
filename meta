@@ -1,8 +1,9 @@
 Version: 1
-Previous: 00e8e31ce59a9d363f2aeeec7fb43408f4f9f54f
-Head: 99d9147cefb52478dbea208fbf600611b8312ee8
+Previous: 0cf773713fdb0e28523b95fe8dd8e7a39d5c9ec1
+Head: e05a2c690ce810e38ad001179a81db7f6d9fd96b
 Applied:
   cmake: bbd4db7f64433c47fa1f25b00f61a2825de0d580
   gitignore: 99d9147cefb52478dbea208fbf600611b8312ee8
+  rootcint: e05a2c690ce810e38ad001179a81db7f6d9fd96b
 Unapplied:
 Hidden:
