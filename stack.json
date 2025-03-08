@@ -1,13 +1,14 @@
 {
   "version": 5,
-  "prev": "027c25a99dcf8522888c50fc51884e5e7fa68817",
-  "head": "de7cf06090328b52cebbfd478bed5f192b05d55a",
+  "prev": "3af338127f5bf8e53da6c5901feea91f33f41df4",
+  "head": "db9a38bf4fb0352ebe219604eb23bacb08ae48d9",
   "applied": [
     "gitignore",
-    "cmake",
+    "cmake"
+  ],
+  "unapplied": [
     "rootcint"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "cmake": {
