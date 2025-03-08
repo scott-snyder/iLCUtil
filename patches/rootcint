@@ -1,6 +1,0 @@
-Bottom: 9130e7f183d0e7c3981572bf9cd742ef5422b177
-Top:    d3dd14d45f1f09a5087de022b124713f8ce2eba3
-Author: scott snyder <sss@karma>
-Date:   2024-11-10 16:29:52 -0500
-
-Remove deprecated rootcint flag -c.
