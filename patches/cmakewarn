@@ -1,0 +1,18 @@
+Bottom: 9130e7f183d0e7c3981572bf9cd742ef5422b177
+Top:    9130e7f183d0e7c3981572bf9cd742ef5422b177
+Author: sss <sss@karma>
+Date:   2025-10-16 10:57:52 -0400
+
+Fix cmake warning
+
+We were getting a warning from cmake:
+
+```
+  The package name passed to `find_package_handle_standard_args` (streamlog)
+  does not match the name of the calling package (ILCUTIL).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+```
+
+Suppress this warning by adding the NAME_MISMATCHED option to
+the FIND_PACKAGE_HANDLE_STANDARD_ARGS in streamlogConfig.cmake.
