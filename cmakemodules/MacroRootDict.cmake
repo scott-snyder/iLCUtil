@@ -166,10 +166,19 @@ MACRO( GEN_ROOT_DICT_SOURCE _dict_src_filename )
     STRING( REPLACE "/" "_" _dict_src_filename_nosc ${_dict_src_filename} )
     SET( _dict_src_file ${ROOT_DICT_OUTPUT_DIR}/${_dict_src_filename_nosc} )
     STRING( REGEX REPLACE "^(.*)\\.(.*)$" "\\1_rdict.pcm" _dict_hdr_file "${_dict_src_file}" )
+    # The create_symlink below is needed when building in ABS_SYMLINK mode.
+    # Cling tries to load the PCM file for a library in the same directory
+    # as the library, after resolving symlinks.
+    # But the libraries are built in the build/PACK/lib directory and the PCM
+    # files in build/PACK/rootdict.  They both get symlinked in inst/lib,
+    # but that doesn't help.  So put a link to the PCM in build/PACK/lib.
+    #Causes errors in KalTest...
+    #COMMAND ${CMAKE_COMMAND} -E create_symlink ${_dict_hdr_file} ${LIBRARY_OUTPUT_PATH}
     ADD_CUSTOM_COMMAND(
         OUTPUT  ${_dict_src_file} ${_dict_hdr_file}
         COMMAND mkdir -p ${ROOT_DICT_OUTPUT_DIR}
         COMMAND ${ROOT_CINT_WRAPPER} -f "${_dict_src_file}" -c ${ROOT_DICT_CINT_DEFINITIONS} ${_dict_includes} ${ROOT_DICT_INPUT_HEADERS}
+        COMMAND ln -sf ${_dict_hdr_file} ${LIBRARY_OUTPUT_PATH}
         WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
         DEPENDS ${ROOT_DICT_INPUT_HEADERS}
         COMMENT "generating: ${_dict_src_file} ${_dict_hdr_file}"
