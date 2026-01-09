@@ -1,0 +1,12 @@
+Bottom: 75ef001f424519572836837c6f1870e7948cac17
+Top:    75ef001f424519572836837c6f1870e7948cac17
+Author: sss <sss@karma>
+Date:   2026-01-09 15:47:41 -0500
+
+Fix for building in ABS_SYMLINK mode.
+
+cling tries to load the PCM file for a library in the same directory as the
+library, after resolving symlinks.
+But the libraries are built in the build/PACK/lib directory and the PCM
+files in build/PACK/rootdict.  They both get symlinked in inst/lib,
+but that doesn't help.  Fix by putting a link to the PCM< in build/PACK/lib.
