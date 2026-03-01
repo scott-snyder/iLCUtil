@@ -1,11 +1,11 @@
 Bottom: 1c600e429ba35eef05f9b81561aded90675b6fe4
 Top:    d8f08b75c228c273fea8a37a945fbf6b69e9dc17
 Author: sss <sss@karma>
-Date:   2026-02-18 11:18:14 -0500
+Date:   2026-02-28 22:55:06 -0500
 
 Fix cmake warning
 
-We were getting a warning from cmake:
+We were getting a warning from cmake (building k4Reco):
 
 ```
   The package name passed to `find_package_handle_standard_args` (streamlog)

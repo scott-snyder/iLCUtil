@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "prev": "92e33c6dfe3ca6b4b3e917d1addc68abd46cea7e",
+  "prev": "54aa626c336e229e552e11011eba3306a360bf6e",
   "head": "2b9b20e11e6a8b4bd66a8466a8d02c29ba2b0270",
   "applied": [
     "symlink",
@@ -21,7 +21,7 @@
       "oid": "fecdb1e25398a40e510bbd294bf9a218aaba04d8"
     },
     "cmakewarn": {
-      "oid": "15853ad819683b62bf1b7c7170df89d1882b9968"
+      "oid": "73f49d11cfbfa9d6f94f0371e14fd9e20f3d4a1f"
     },
     "gitignore": {
       "oid": "2b9b20e11e6a8b4bd66a8466a8d02c29ba2b0270"
