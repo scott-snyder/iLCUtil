@@ -1,16 +1,17 @@
 {
   "version": 5,
-  "prev": "712557c89f2663cbececa8107e6768dbbdce2d5c",
+  "prev": "92e33c6dfe3ca6b4b3e917d1addc68abd46cea7e",
   "head": "2b9b20e11e6a8b4bd66a8466a8d02c29ba2b0270",
   "applied": [
     "symlink",
     "cmake",
     "gitignore"
   ],
-  "unapplied": [],
-  "hidden": [
-    "ci",
+  "unapplied": [
     "cmakewarn"
+  ],
+  "hidden": [
+    "ci"
   ],
   "patches": {
     "ci": {
