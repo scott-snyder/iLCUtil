@@ -1,14 +1,14 @@
 {
   "version": 5,
-  "prev": "4d6b1a2a27c5d67c93d1241d760189d2f292461f",
-  "head": "a2fe78789ba7f7c1120f74b9f32a93b5f36cfcfd",
-  "applied": [],
-  "unapplied": [
+  "prev": "032e716b6d7d7c9b6cc66f061681ad6e937ca98f",
+  "head": "b49610b26e94d74f52354b2bc9e5329340d889a8",
+  "applied": [
     "symlink",
     "cmake",
     "gitignore",
     "cmakewarn"
   ],
+  "unapplied": [],
   "hidden": [
     "ci"
   ],
@@ -17,16 +17,16 @@
       "oid": "e8d88ebbb6435c5ced059475acc0bb0550a63b11"
     },
     "cmake": {
-      "oid": "fecdb1e25398a40e510bbd294bf9a218aaba04d8"
+      "oid": "78d4788cfd4e6f24ec4c6cbd89a3c608a33ff3bc"
     },
     "cmakewarn": {
-      "oid": "339ac53f4328e42ddc6ef72ad43e2621bc0ec896"
+      "oid": "b49610b26e94d74f52354b2bc9e5329340d889a8"
     },
     "gitignore": {
-      "oid": "2b9b20e11e6a8b4bd66a8466a8d02c29ba2b0270"
+      "oid": "fdfe77eca0ce1b9d69ffa1c800ec62bede713d13"
     },
     "symlink": {
-      "oid": "b764b03fbf8fdeb14b6396d203f39f4b426c444b"
+      "oid": "eac9c6bbbaa4fa8d2df36f84f91d7bfd5e899e25"
     }
   }
 }
